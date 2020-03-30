@@ -1,10 +1,10 @@
 import React from 'react';
-import { StatusBar, Text } from 'react-native';
+import { StatusBar } from 'react-native';
 import styled from 'styled-components';
 
-import COLORS from '~/config/colors';
+import Login from '~/pages/Login';
 
-// import { Container } from './styles';
+import COLORS from '~/config/colors';
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
         backgroundColor={COLORS.primaryColor}
       />
       <StyledView>
-        <Text>Team Fighter Taekwondo</Text>
+        <Login />
       </StyledView>
     </>
   );
