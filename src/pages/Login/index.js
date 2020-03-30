@@ -31,7 +31,7 @@ const Login = () => {
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
-        onSubmit={(values) => Alert.alert(JSON.stringify(values))}>
+        onSubmit={() => Alert.alert('Logou')}>
         {({ values, handleChange, handleSubmit, errors, touched }) => (
           <>
             <View>

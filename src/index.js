@@ -2,7 +2,7 @@ import React from 'react';
 import { StatusBar } from 'react-native';
 import styled from 'styled-components';
 
-import Login from '~/pages/Login';
+import Router from '~/config/routes';
 
 import COLORS from '~/config/colors';
 
@@ -14,7 +14,7 @@ const App = () => {
         backgroundColor={COLORS.primaryColor}
       />
       <StyledView>
-        <Login />
+        <Router />
       </StyledView>
     </>
   );
