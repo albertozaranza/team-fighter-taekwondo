@@ -1,20 +1,28 @@
 import React from 'react';
-import { StatusBar, Text, View } from 'react-native';
+import { StatusBar, Text } from 'react-native';
+import styled from 'styled-components';
 
 import COLORS from '~/config/colors';
 
 // import { Container } from './styles';
 
-export default function App() {
+const App = () => {
   return (
     <>
       <StatusBar
         barStyle="light-content"
         backgroundColor={COLORS.primaryColor}
       />
-      <View style={{ backgroundColor: COLORS.backgroundColor, flex: 1 }}>
+      <StyledView>
         <Text>Team Fighter Taekwondo</Text>
-      </View>
+      </StyledView>
     </>
   );
-}
+};
+
+const StyledView = styled.View`
+  background-color: ${COLORS.backgroundColor};
+  flex: 1;
+`;
+
+export default App;
